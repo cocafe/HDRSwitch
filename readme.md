@@ -4,7 +4,7 @@ CLI program to toggle HDR on/off on Windows.
 
 Inspired by [AutoActions](https://github.com/Codectory/AutoActions), but with some fixes, including reloading ICC profile on toggle.
 
-
+Tested on Windows 10 22H2 and Windows 11 22H2.
 
 #### How to use
 
@@ -23,17 +23,17 @@ Inspired by [AutoActions](https://github.com/Codectory/AutoActions), but with so
 # list all monitors
 ./HDRSwitch.exe -l
 
-# toggle hdr state on a monitor
+# toggle hdr state on monitor 0
 ./HDRSwitch.exe -t -m 0
 
-# turn off hdr on a monitor
+# turn off hdr on monitor 0
 ./HDRSwitch.exe --hdr_off -m 0
 
 # turn on hdr on ALL monitors
 ./HDRSwitch.exe --hdr_on --all
 ```
 
-
+You can create a desktop shortcut and assign with a shortcut hotkey to toggle HDR by keyboard. 
 
 #### How to compile
 

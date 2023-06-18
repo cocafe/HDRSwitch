@@ -302,6 +302,11 @@ int wmain(int wargc, wchar_t *wargv[])
         console_alloc_set(0);
         opts_helptxt_defval_print(0);
 
+        if (wargc == 1) {
+                print_help();
+                return -EINVAL;
+        }
+
         if ((err = wchar_longopts_parse(wargc, wargv, NULL)))
                 return err;
 

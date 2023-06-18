@@ -33,7 +33,7 @@ int hdr_off = 0;
 
 lopt_noarg(hdr_on, &hdr_on, sizeof(hdr_on), &(int){ 1 }, "Turn on HDR on a monitor");
 lopt_noarg(hdr_off, &hdr_off, sizeof(hdr_off), &(int){ 1 }, "Turn off HDR on a monitor");
-lsopt_noarg(t, toggle, &hdr_toggle, sizeof(hdr_toggle), &(int){ 1 }, "Toggle HDR state");
+lsopt_noarg(t, toggle, &hdr_toggle, sizeof(hdr_toggle), &(int){ 1 }, "Toggle HDR state on a monitor");
 lsopt_noarg(v, verbose, &verbose, sizeof(verbose), &(int){ 1 }, "Verbose output");
 lsopt_noarg(l, list, &list_monitor, sizeof(list_monitor), &(int){ 1 }, "List monitors");
 lsopt_int(m, monitor, &target_monitor, sizeof(target_monitor), "Monitor index");
@@ -298,6 +298,7 @@ int wmain(int wargc, wchar_t *wargv[])
 
         setbuf(stdout, NULL);
 
+        logging_colored_set(0);
         console_alloc_set(0);
         opts_helptxt_defval_print(0);
 

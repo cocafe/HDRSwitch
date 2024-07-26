@@ -95,6 +95,7 @@ target_link_libraries(${PROJECT_NAME} jjcom)
 target_link_libraries(${PROJECT_NAME} ntdll)
 target_link_libraries(${PROJECT_NAME} ntoskrnl)
 target_link_libraries(${PROJECT_NAME} user32)
+target_link_libraries(${PROJECT_NAME} dxva2)
 target_link_libraries(${PROJECT_NAME} c:/Windows/System32/mscms.dll)
 
 set(INSTALL_DEST "Build-${CMAKE_BUILD_TYPE}")

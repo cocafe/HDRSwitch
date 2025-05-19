@@ -1,5 +1,10 @@
 # HDRSwitch
 
+This repo includes `HDRToggler`, an AutoHotkey v2 script for toggling HDR on Windows 10 using the CLI tool HDRSwitch.
+See `HDRToggler/README.md` for details.
+
+#### Description
+
 CLI program to toggle HDR on/off on Windows.
 
 Inspired by [AutoActions](https://github.com/Codectory/AutoActions), but with some fixes, including reloading ICC profile on toggle.
